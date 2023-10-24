@@ -25,7 +25,7 @@ const user=require('./routes/users');
 
 
 app.get('/',(req,res) => {
-    res.status(200).send('Social Media App')
+    res.status(200).send('Social Media App 1')
 })
 
 app.use("/api/v1",post);

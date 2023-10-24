@@ -14,9 +14,11 @@ app.use(cookieParser());
 const post=require('./routes/post');
 const user=require('./routes/users');
 
-app.get("api/v1", (req,res) => {
-    res.send('Hello');
+
+app.get('/',(req,res) => {
+    res.status(200).send('Social Media App')
 })
+
 app.use("/api/v1",post);
 app.use("/api/v1",user);
 
